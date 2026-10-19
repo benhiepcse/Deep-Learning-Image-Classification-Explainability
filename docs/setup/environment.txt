@@ -1,0 +1,47 @@
+===== PROJECT =====
+/home/hiep/BenHiep/Deep-Learning-Image-Classification-Explainability
+origin	https://github.com/benhiepcse/Deep-Learning-Image-Classification-Explainability.git (fetch)
+origin	https://github.com/benhiepcse/Deep-Learning-Image-Classification-Explainability.git (push)
+
+===== OPERATING SYSTEM =====
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+6.18.33.2-microsoft-standard-WSL2
+
+===== PYTHON =====
+Python 3.10.12
+pip 26.2.1 from /home/hiep/BenHiep/Deep-Learning-Image-Classification-Explainability/.venv/lib/python3.10/site-packages/pip (python 3.10)
+
+===== CPU =====
+Architecture:                            x86_64
+CPU(s):                                  16
+Model name:                              AMD Ryzen 7 7435HS
+NUMA node0 CPU(s):                       0-15
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       2.1Gi       541Mi       3.0Mi       5.1Gi       5.4Gi
+Swap:          2.0Gi       0.0Ki       2.0Gi
+
+===== GPU =====
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 591.91
+
+===== PYTORCH =====
+torch: 2.11.0+cu128
+torchvision: 0.26.0+cu128
+CUDA runtime: 12.8
+CUDA available: True
+
+===== INSTALLATION COMMAND =====
+python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128

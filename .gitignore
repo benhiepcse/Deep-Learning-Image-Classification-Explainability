@@ -1,0 +1,32 @@
+# Python virtual environments
+.venv/
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Datasets
+data/
+datasets/
+
+# Generated outputs
+outputs/
+checkpoints/
+runs/
+logs/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+
+# Secrets
+*.key
+*.pem
+secrets/

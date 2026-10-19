@@ -207,3 +207,7 @@ Ho Chi Minh City University of Technology (HCMUT)
 ---
 
 *This project is developed for educational, experimental, and AI engineering portfolio purposes.*
+
+## 15. Local Development Environment
+
+See [Environment Setup](docs/setup/SETUP.md) for installation instructions and S01-01 evidence.

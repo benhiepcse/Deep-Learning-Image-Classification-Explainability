@@ -1,0 +1,6 @@
+PyTorch: 2.11.0+cu128
+CUDA available: True
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+Result: tensor([[19., 22.],
+        [43., 50.]], device='cuda:0')
+GPU TENSOR SMOKE TEST: PASS
