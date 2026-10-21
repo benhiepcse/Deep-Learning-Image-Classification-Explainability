@@ -476,3 +476,184 @@ Tôi cũng học Linux, terminal, Git và GitHub từ đầu. Hãy áp dụng P2
 - Cuối task: giữ code/config/log có thể truy xuất; ghi một điều đã hiểu, một điều còn mơ hồ và hành động tiếp theo.
 
 Một buổi học đạt kết quả khi Hiệp tự thực hiện và giải thích được một bước có bằng chứng, dù bước đó còn nhỏ.
+
+## P26 — Viết báo cáo cho một nhiệm vụ hoặc một buổi làm
+
+```text
+Áp dụng P00. Hãy giúp tôi viết báo cáo cho nhiệm vụ/buổi làm H01 dưới đây.
+
+Thông tin đầu vào:
+- Task ID và tên:
+- Ngày thực hiện:
+- Mục tiêu và tiêu chí nghiệm thu:
+- Công việc thực tế đã làm:
+- Files đã tạo/sửa:
+- Code/config liên quan:
+- Lệnh terminal/Git đã chạy:
+- Logs, test results, hình ảnh và artifacts:
+- Run ID/commit hash nếu có:
+- Lỗi gặp phải và cách xử lý:
+- Phần chưa hoàn thành:
+
+Chỉ sử dụng thông tin và bằng chứng tôi cung cấp hoặc bạn thực sự kiểm tra được. Không biến mục tiêu dự kiến thành kết quả đã đạt. Nếu thiếu thông tin, ghi rõ “Chưa có dữ liệu” hoặc hỏi thông tin thật sự cần thiết.
+
+Viết báo cáo bằng tiếng Việt, rõ ràng, đủ để tôi nhìn lại và người khác hiểu được:
+
+1. Mục tiêu nhiệm vụ
+   - Nhiệm vụ giải quyết vấn đề gì trong H01?
+   - Input, output và điều kiện hoàn thành là gì?
+
+2. Công việc đã thực hiện
+   - Trình bày các bước thực tế theo thứ tự hợp lý.
+   - Liệt kê file đã tạo/sửa, trách nhiệm của từng file và mối liên hệ với module khác.
+   - Giải thích những quyết định triển khai quan trọng và lý do lựa chọn.
+
+3. Kiến thức đã học
+   - Python, toán, ML/DL và PyTorch khi liên quan.
+   - Linux, terminal, môi trường Python, Git/GitHub khi liên quan.
+   - Phân biệt phần tôi đã tự làm/giải thích được với phần mới được hướng dẫn hoặc cần ôn lại.
+
+4. Code và lệnh tiêu biểu
+   - Chỉ chọn đoạn có ý nghĩa với nhiệm vụ, không chép toàn bộ source code.
+   - Với mỗi đoạn, trình bày:
+     Bước N — Code.
+     → Console Output: kết quả thực tế; nếu chỉ minh họa phải ghi rõ.
+     → Internal State: dữ liệu, tensor hoặc trạng thái filesystem/environment/Git thay đổi.
+     → Explanation: mục đích, cơ chế và lý do sử dụng.
+   - Ghi working directory, môi trường thực thi và prerequisites nếu cần để chạy lại.
+
+5. Kiểm tra và kết quả
+   - Lập bảng: tiêu chí → cách kiểm tra → kết quả thực tế → bằng chứng → trạng thái.
+   - Phân biệt pass, fail, chưa chạy và chưa đủ bằng chứng.
+   - Metrics phải ghi rõ run, split, đơn vị và nguồn.
+   - Không xem việc chương trình chạy không lỗi là bằng chứng đủ cho tính đúng đắn.
+
+6. Lỗi và cách xử lý
+   - Triệu chứng → nguyên nhân đã xác minh hoặc giả thuyết → cách sửa → bằng chứng kiểm tra lại.
+   - Không khẳng định nguyên nhân gốc nếu chưa đủ bằng chứng.
+
+7. Hạn chế và công việc tiếp theo
+   - Phần còn thiếu, giả định và rủi ro thực tế.
+   - Hành động tiếp theo nhỏ, cụ thể và có điều kiện hoàn thành.
+
+8. Kết luận nghiệm thu
+   - Đạt / đạt một phần / chưa đủ bằng chứng.
+   - Giải thích kết luận theo acceptance criteria.
+   - Không đánh dấu hoàn thành chỉ vì đã tạo code.
+
+Điều chỉnh độ dài theo quy mô nhiệm vụ. Không thêm mục trống hoặc nội dung chung chung để kéo dài báo cáo. Xuất nội dung Markdown hoàn chỉnh để tôi copy.
+```
+
+## P27 — Viết báo cáo kỹ thuật toàn dự án H01
+
+```text
+Áp dụng P00. Hãy viết báo cáo kỹ thuật H01 dựa trên tài liệu yêu cầu và artifacts thực tế tôi cung cấp.
+
+Đầu vào:
+- Tài liệu yêu cầu và checklist hiện hành:
+- Repository hoặc source code:
+- Environment/dependency versions và phần cứng:
+- Data split và preprocessing:
+- Configs và experiment registry E01–E04:
+- Checkpoint selection rule và frozen checkpoint manifest:
+- Training/validation histories:
+- Test predictions, labels và metrics:
+- Learning curves, confusion matrices và error samples:
+- Grad-CAM figures và thông tin target class/layer:
+- Benchmark logs:
+- Test report và reproduction commands:
+- Nguồn tham khảo:
+- Yêu cầu định dạng/độ dài nếu có:
+
+Trước khi viết:
+1. Kiểm kê nguồn đã đọc, artifacts đã kiểm tra và thông tin còn thiếu.
+2. Đối chiếu yêu cầu với triển khai thực tế; không mặc định code khớp tài liệu kế hoạch.
+3. Kiểm tra số liệu có truy xuất được đến Run ID/config/checkpoint/split không.
+4. Nếu tài liệu hoặc mã kiểm thử không khớp nhau, chỉ rõ và đối chiếu theo ý nghĩa.
+5. Nếu thiếu dữ liệu, vẫn viết phần có đủ bằng chứng; đánh dấu phần còn thiếu rõ ràng, không tự điền kết quả.
+
+Tổ chức báo cáo theo cấu trúc sau, điều chỉnh khi yêu cầu của trường hoặc template có quy định khác:
+
+1. Tóm tắt
+   - Bài toán, phương pháp, thiết lập thực nghiệm, kết quả chính và giới hạn.
+   - Chỉ viết kết quả đã đo; hoàn thiện phần này sau khi các phần khác đã thống nhất.
+
+2. Giới thiệu
+   - Động cơ, mục tiêu và phạm vi H01.
+   - Các câu hỏi thực nghiệm.
+   - Phân biệt mục tiêu ban đầu với phần thực tế hoàn thành.
+
+3. Cơ sở lý thuyết
+   - CNN, residual learning, cross-entropy, augmentation, classification metrics và Grad-CAM ở mức cần thiết.
+   - Giải thích ký hiệu, giả thiết và dimensions của công thức.
+   - Liên hệ từng phương pháp với implementation thực tế.
+   - Dẫn nguồn chính thống; không bịa tài liệu, DOI hoặc URL.
+
+4. Dữ liệu và preprocessing
+   - CIFAR-10, class mapping và số mẫu thực tế của từng split.
+   - Cách tạo/lưu split, seed và kiểm tra không giao nhau.
+   - Training transforms, deterministic validation/test transforms và normalization.
+   - Biện pháp phòng tránh data leakage.
+
+5. Thiết kế và triển khai hệ thống
+   - Kiến trúc các module và luồng dữ liệu.
+   - CNN baseline và ResNet-18 thực tế, bao gồm thay đổi dành cho ảnh 32×32.
+   - Training/validation engine, checkpointing, evaluation, Grad-CAM và inference.
+   - Dùng bảng/sơ đồ khi giúp hiểu kiến trúc; không chép toàn bộ source code.
+   - Giải thích các quyết định kỹ thuật và trade-offs quan trọng.
+
+6. Thiết lập thực nghiệm
+   - Ma trận E01–E04: architecture × augmentation.
+   - Initialization, seed policy, optimizer, scheduler, batch size, epochs/update steps và training budget.
+   - Quy tắc chọn checkpoint bằng validation và thời điểm khóa cấu hình.
+   - Phần cứng, phiên bản phần mềm và điều kiện benchmark.
+   - Nêu rõ khác biệt giữa các runs và giới hạn tính công bằng của so sánh.
+
+7. Kết quả
+   - Learning curves, accuracy, macro-F1, per-class metrics và confusion matrices.
+   - So sánh E02–E01, E04–E03 và các cặp architecture phù hợp.
+   - Báo cáo chênh lệch accuracy bằng điểm phần trăm khi phù hợp.
+   - Parameter count, training time, latency và memory chỉ khi có số đo.
+   - Mỗi bảng/hình phải có caption, đơn vị, run/split và phần diễn giải.
+   - Không gọi một run/config là nghiên cứu nhiều seed; không suy ra ý nghĩa thống kê khi chưa có cơ sở.
+
+8. Phân tích lỗi và Grad-CAM
+   - Các cặp lớp dễ nhầm và quy tắc chọn mẫu.
+   - Ví dụ đúng/sai có sample ID, true/predicted/target classes và checkpoint.
+   - Giải thích target layer, target-class score và cách tạo heatmap.
+   - Nêu giới hạn độ phân giải, selection bias và giới hạn diễn giải.
+   - Không coi heatmap là segmentation hoặc bằng chứng nhân quả.
+
+9. Kiểm thử và khả năng tái lập
+   - Kiểm thử nào đã chạy, điều kiện đạt và bằng chứng.
+   - Hướng dẫn setup, train, resume, evaluate, inference và tái tạo figures.
+   - Lệnh phải khớp entry points thật; ghi nơi chạy và prerequisites.
+   - Phân biệt tái lập quy trình với bảo đảm kết quả giống tuyệt đối.
+   - Không công bố secrets hoặc đường dẫn riêng không cần thiết.
+
+10. Thảo luận và hạn chế
+    - Trả lời từng câu hỏi thực nghiệm bằng bằng chứng.
+    - Tách quan sát, giả thuyết giải thích và kết luận.
+    - Nêu giới hạn dataset, kiến trúc, training budget, seed và protocol.
+    - Nếu đã tuning sau khi xem test, phải công khai ảnh hưởng đó đến tính độc lập của đánh giá.
+
+11. Kết luận và hướng phát triển
+    - Mục tiêu thực tế đã đạt, kỹ năng đã hình thành và phần còn thiếu.
+    - Đề xuất bước tiếp theo có cơ sở, phù hợp tài nguyên.
+    - Phân biệt hướng mở rộng với chức năng đã triển khai.
+
+12. Tài liệu tham khảo và phụ lục
+    - Chỉ liệt kê nguồn thực sự sử dụng.
+    - Ghi rõ code tự viết, code điều chỉnh và nguồn tham khảo.
+    - Đưa configs, lệnh chạy, bảng kết quả chi tiết hoặc test mapping vào phụ lục khi cần.
+
+Yêu cầu trình bày:
+- Văn phong báo cáo kỹ thuật rõ ràng, chính xác; không quảng cáo hoặc tự nhận “tối ưu nhất”.
+- Giữ cách xưng hô nhất quán cho dự án cá nhân; không viết như dự án nhóm.
+- Mọi claim định lượng phải có nguồn từ artifact thật.
+- Đề xuất hình còn thiếu bằng nhãn “Hình cần bổ sung”, không giả vờ hình đã tồn tại.
+- Khi giải thích code/lệnh trong phụ lục, áp dụng Code → Console Output → Internal State → Explanation.
+- Nếu báo cáo dài, lập dàn ý và bảng evidence trước, sau đó viết tuần tự từng chương; duy trì số liệu và thuật ngữ nhất quán.
+
+Cuối cùng, rà soát chéo số liệu, tên runs, số mẫu, hình/bảng, claims và references; liệt kê phần chưa thể xác minh. Xuất nội dung Markdown hoàn chỉnh để tôi copy.
+```

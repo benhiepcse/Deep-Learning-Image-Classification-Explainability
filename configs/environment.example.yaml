@@ -1,0 +1,18 @@
+# Template only. Copy to a run-specific config after the values are decided.
+project: H01
+
+runtime:
+  python_version: TODO
+  device_policy: TODO
+  seed: TODO
+
+paths:
+  data_dir: ./data
+  output_dir: ./outputs
+
+experiment:
+  run_id: TODO
+  model: TODO
+  augmentation: TODO
+  batch_size: TODO
+  epochs: TODO

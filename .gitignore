@@ -1,27 +1,35 @@
 # Python virtual environments
 .venv/
+venv/
+env/
 .env
 .env.*
 !.env.example
 
-# Python caches
+# Python bytecode and caches
 __pycache__/
-*.pyc
+*.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 
-# Datasets
-data/
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Dataset contents (keep small documentation and placeholders)
+data/*
+!data/.gitkeep
+!data/README.md
 datasets/
 
-# Generated outputs
-outputs/
+# Experiment outputs and large artifacts
 checkpoints/
-runs/
 logs/
-
-# Model weights
+runs/
+outputs/
 *.pt
 *.pth
 *.ckpt
@@ -30,3 +38,13 @@ logs/
 *.key
 *.pem
 secrets/
+
+# Notebook-generated checkpoints
+.ipynb_checkpoints/
+
+# Coverage and build artifacts
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
